@@ -66,6 +66,22 @@ K:D
 Note Flow builds upon the foundational concepts from [MIT's Introduction to Deep Learning Lab](http://introtodeeplearning.com/) music generation project. While retaining the core LSTM architecture for sequence modeling, this implementation introduces several key enhancements to better suit my needs.
 
 
+## Technical Exploration: MIDI Conversion Challenges
+
+During development, I experimented with extending the system's capabilities by:
+
+- 🎧 **Processing MP3 Inputs**  
+  Successfully implemented audio-to-MIDI conversion using Google's [Magenta's Onsets & Frames](https://magenta.tensorflow.org/onsets-frames) model
+
+- ⚠️ **Encountered Limitations**  
+  Found that MIDI-to-ABC conversion:  
+  • Loses nuanced musical expressions  
+  • Struggles with polyphonic content  
+  • Often produces mechanically simplified outputs  
+
+While alternative formats like MusicXML show promise for better music representation, this remains an open challenge for future development.
+
+
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
